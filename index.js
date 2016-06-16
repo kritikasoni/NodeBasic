@@ -29,7 +29,7 @@ const getStudentById= (id) =>{
     );
 };
 const isSomeStudentGradeGreaterThan2= () =>{
-    return students.some(student=>student.grade>2.0);  //มี นร อย่างน้อย 1 คนที่ได้เกรดมากกว่า  2 หรือไม่
+    return students.every(student=>student.grade<4.5);  //มี นร อย่างน้อย 1 คนที่ได้เกรดมากกว่า  2 หรือไม่
 };
 getStudentById('562115003')
 console.log(isSomeStudentGradeGreaterThan2());
