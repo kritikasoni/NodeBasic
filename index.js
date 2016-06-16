@@ -17,8 +17,11 @@ const student3 ={
 };
 
 const students=[student1,student2,student3];
-if(Math.random()>0.5){
-    students.splice(0,2);//ตัด
-}
- 
+
+    students.splice(1,1);
 console.log(students);
+
+const getStudentById=(id,name)=>{  //รับid =>แปลว่า เนี่ย!เปนฟังชั่นนะ
+    console.log(id,name);
+};
+getStudentById(15,'kris');
