@@ -16,9 +16,9 @@ const student3 ={
     name:'EJ'
 };
 
-const students=[student1,student2];
+const students=[student1,student2,student3];
 if(Math.random()>0.5){
-    students.push(student3);
+    students.splice(0,2);//ตัด
 }
  
 console.log(students);
