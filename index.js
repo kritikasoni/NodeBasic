@@ -23,7 +23,7 @@ const students=[student1,student2,student3];
 
 const getStudentById= (id) =>{
     console.log(
-        students.filter(student => student.id == id).pop()
+        students.filter(student => student.id == id).map(student=>'This is student number:'+student.id).pop() //map คือการเปลี่ยนรูป
     );
 };
 getStudentById('562115003')
