@@ -18,16 +18,17 @@ const student3 ={
 
 const students=[student1,student2,student3];
 
-    students.splice(1,1);
-console.log(students);
+// students.splice(1,1);
+// console.log(students);
 
-const getStudentById=(id,name)=>{  //รับid =>แปลว่า เนี่ย!เปนฟังชั่นนะ
-    if(id){
-        console.log(id);
-    }
-    else{
-        console.log('Please insert id')
-    }
-    
+const IfIdIsEqual =(student,id) =>{
+    if(student.id==id) return true;
 };
-getStudentById();
+const getStudentById =(id) =>{
+    students.forEach(student => {
+        if (IfIdIsEqual(student, id)) {
+            console.log(student);
+        }
+    });
+};
+getStudentById('562115003');
