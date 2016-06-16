@@ -22,6 +22,12 @@ const students=[student1,student2,student3];
 console.log(students);
 
 const getStudentById=(id,name)=>{  //รับid =>แปลว่า เนี่ย!เปนฟังชั่นนะ
-    console.log(id,name);
+    if(id){
+        console.log(id);
+    }
+    else{
+        console.log('Please insert id')
+    }
+    
 };
-getStudentById(15,'kris');
+getStudentById();
