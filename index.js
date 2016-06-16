@@ -29,7 +29,10 @@ const getStudentById= (id) =>{
     );
 };
 const isSomeStudentGradeGreaterThan2= () =>{
-    return students.every(student=>student.grade<4.5);  //มี นร อย่างน้อย 1 คนที่ได้เกรดมากกว่า  2 หรือไม่
+    return students.some(student=>student.grade<2.0);  //มี นร อย่างน้อย 1 คนที่ได้เกรดมากกว่า  2 หรือไม่
 };
 getStudentById('562115003')
+const numbers=[1,2,3,4,5,6,7,8,9,10];
+const sum = numbers.reduce((total,NextValue) => total+NextValue,0);
+console.log(sum);
 console.log(isSomeStudentGradeGreaterThan2());
