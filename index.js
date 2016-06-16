@@ -11,5 +11,14 @@ const student2 ={
     id:'562115028',
     name:'Nurse'
 };
+const student3 ={
+    id:'562115012',
+    name:'EJ'
+};
+
 const students=[student1,student2];
+if(Math.random()>0.5){
+    students.push(student3);
+}
+ 
 console.log(students);
