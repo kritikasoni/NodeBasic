@@ -24,11 +24,11 @@ const students=[student1,student2,student3];
 const IfIdIsEqual =(student,id) =>{
     if(student.id==id) return true;
 };
-const getStudentById =(id) =>{
-    students.forEach(student => {
-        if (IfIdIsEqual(student, id)) {
-            console.log(student);
-        }
+const getStudentById =() =>{
+    students.forEach((student,index) => {
+
+            console.log(index,student);
+
     });
 };
-getStudentById('562115003');
+getStudentById();
