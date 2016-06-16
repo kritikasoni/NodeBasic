@@ -21,14 +21,9 @@ const students=[student1,student2,student3];
 // students.splice(1,1);
 // console.log(students);
 
-const IfIdIsEqual =(student,id) =>{
-    if(student.id==id) return true;
+const getStudentById= (id) =>{
+    console.log(
+        students.filter(student => student.id == id).pop()
+    );
 };
-const getStudentById =() =>{
-    students.forEach((student,index) => {
-
-            console.log(index,student);
-
-    });
-};
-getStudentById();
+getStudentById('562115003')
